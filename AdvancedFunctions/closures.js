@@ -11,3 +11,5 @@ function outerFunction(outerParam) {
 
 var closure = outerFunction(5); // Pass outer function
 closure(10); // Pass inner function
+
+
