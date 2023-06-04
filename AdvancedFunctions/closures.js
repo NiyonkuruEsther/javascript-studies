@@ -12,4 +12,4 @@ function outerFunction(outerParam) {
 var closure = outerFunction(5); // Pass outer function
 closure(10); // Pass inner function
 
-
+// Closures can be used while working with the IIFE functions to be able to work with their variables which are not accessible outside
