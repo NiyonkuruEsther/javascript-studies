@@ -8,15 +8,15 @@ const games = new Set([1, 2, 4, 2, 6, 4]);
 // to add an element to the set you use the .add() method
 // to remove use can use the .delete() method
 //.add() returns the Set if an item is successfully added. On the other hand, .delete() returns a Boolean (true or false) depending on successful deletion.
-games.delete(2);
-games.add(3);
+// games.delete(2);
+// games.add(3);
 //with .clear() we clear everything in the set
 //to check for the existence of an item in the set you use the .has() method
-console.log(games.has(1));
+// console.log(games.has(1));
 //to display the size of the set you use the .size
 //to display the vlues of the set you use the .values() method which is a setIterator object
-console.log(games.size, games.values(), games);
+console.log(games.size, games.entries(), games);
 //you can use the for of loop to iterate over the set
-for (const number of games) {
-  console.log(number);
-}
+// for (const number of games) {
+//   console.log(number);
+// }

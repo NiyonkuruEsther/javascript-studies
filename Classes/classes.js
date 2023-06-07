@@ -1,6 +1,6 @@
 // classes
 // ?What does the this keyword in the clasess does?
-
+// Can we use the constructor on functions inside the class??
 class Car {
   // We use a constructor to initialize the variables
   constructor(color) {

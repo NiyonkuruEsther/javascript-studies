@@ -1,5 +1,5 @@
 //This has different use case
-//1. If it is sed inside an object's method this refers to the object itself what we call implicit binding
+//1. If it is used inside an object's method this refers to the object itself what we call implicit binding
 //2. If it is used inside a function this will reference to the global object or the window object
 
 const video = {
@@ -36,10 +36,13 @@ const vid = {
   tags: ["a", "b", "c"],
   showTag() {
     this.tags.forEach(function (tag) {
-      console.log(this, tag); //this this will refer to the global object
+      console.log(this); //this this will refer to the global object
     });
   },
 };
 vid.showTag();
 
 //?What is the difference between the global object and the window object
+// The single thread and multi threads
+// Arrow functions with aync/await
+// Object cloning
