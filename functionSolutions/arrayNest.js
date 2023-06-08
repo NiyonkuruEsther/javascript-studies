@@ -1,26 +1,19 @@
-function getArrayDepth(arr) {
-  let maxDepth = 0;
-
-  // Recursive helper function
-  function findDepth(array, depth) {
-    if (Array.isArray(array)) {
-      depth++;
-
-      if (depth > maxDepth) {
-        maxDepth = depth;
+function depth(arr){
+    let maxD = 0;
+    function arrayDepth(array, depth){
+        if(Array.isArray(array)){
+             depth++
+        if (depth > maxD) {
+        maxD = depth;
       }
-
-      array.forEach(function (element) {
-        findDepth(element, depth);
+       array.forEach(function(element) {
+        arrayDepth(element, depth);
       });
+        }
+       
     }
-  }
-
-  findDepth(arr, 0);
-
-  return maxDepth;
+    arrayDepth(arr, 0);
+    return maxD;
 }
 
-// Example usage
-let nestedArray = [1, [2, [3, [4]]]];
-console.log(getArrayDepth(nestedArray)); // Output: 4
+console.log(depth([2,[3, 4[5, 7], [1,3]]]))
