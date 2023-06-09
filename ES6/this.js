@@ -47,4 +47,4 @@ vid.showTag();
 // Arrow functions with aync/await
 // Object cloning
 // Recursive functions
-// 
+// Workers, 

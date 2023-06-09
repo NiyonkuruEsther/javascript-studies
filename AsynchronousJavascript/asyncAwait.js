@@ -1,4 +1,8 @@
- //We have a promise version of setTimeout that we are going to convert to async await
+// AsyncAwait(ES8) is a feature that allows you to write async fucntions 
+//  
+
+
+//We have a promise version of setTimeout that we are going to convert to async await
 // There are four stages a promises can exist in
 // 1. Pendind stage: Not yet reject or accepted
 // 2. Fulfilled stage: Accepted
