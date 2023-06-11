@@ -19,3 +19,42 @@ console.log(except);
 
 let optional = /a?h?/g.test(string);
 console.log(optional);
+
+// Regular expressions, commonly known as regex, are patterns used to match and manipulate strings in various programming languages, including JavaScript. Here are some key rules and concepts related to regex:
+
+// 1. Literal Characters: Most characters in a regex pattern are treated as literal characters and match themselves. For example, the regex pattern "hello" matches the string "hello" exactly.
+
+// 2. Metacharacters: Certain characters have special meanings in regex patterns and are called metacharacters. Some common metacharacters are:
+
+//    - . (dot): Matches any single character except a newline.
+//    - ^ (caret): Matches the beginning of a line or string.
+//    - $ (dollar sign): Matches the end of a line or string.
+//    - * (asterisk): Matches zero or more occurrences of the preceding character or group.
+//    - + (plus): Matches one or more occurrences of the preceding character or group.
+//    - ? (question mark): Matches zero or one occurrence of the preceding character or group.
+//    - [] (square brackets): Defines a character class, matching any character within the brackets.
+//    - | (pipe): Acts as an OR operator, allowing alternative matches.
+//    - () (parentheses): Groups characters or expressions together.
+
+// 3. Character Classes: Character classes allow you to define a set of characters to match at a particular position in the pattern. Some examples of character classes are:
+
+//    - [abc]: Matches any single character "a", "b", or "c".
+//    - [a-z]: Matches any lowercase letter from "a" to "z".
+//    - [0-9]: Matches any digit from 0 to 9.
+//    - [^abc]: Matches any character except "a", "b", or "c".
+
+// 4. Quantifiers: Quantifiers specify how many times a character or group should occur. Some commonly used quantifiers are:
+
+//    - {n}: Matches exactly "n" occurrences.
+//    - {n,}: Matches "n" or more occurrences.
+//    - {n,m}: Matches between "n" and "m" occurrences (inclusive).
+
+// 5. Escaping Metacharacters: If you want to match a metacharacter as a literal character, you need to escape it with a backslash (\). For example, to match a literal dot (.), you need to use \. in the pattern.
+
+// 6. Flags: Regex patterns can be accompanied by flags that modify the behavior of the pattern matching. In JavaScript, commonly used flags include:
+
+//    - i: Case-insensitive matching.
+//    - g: Global matching (finds all occurrences rather than stopping after the first match).
+//    - m: Multiline matching.
+
+// These are some essential rules and concepts to keep in mind when working with regular expressions. Regular expressions can become quite complex and powerful, allowing for sophisticated pattern matching and manipulation of strings.
